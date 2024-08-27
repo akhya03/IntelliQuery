@@ -22,7 +22,7 @@ def search_results(request):
 
 #Output of the results
 def exa_search(search_term):
-    exa = Exa(api_key="0b13bff4-92f5-4688-a821-c6524dfd62ff")
+    exa = Exa(api_key="<YOUR_API_KEY>")   #PUT YOUR EXA API KEY HERE
     
     # Assuming the correct parameter to pass the search term is 'query' (this depends on the Exa API)
     search_response = exa.search(use_autoprompt=True, num_results=10, query=search_term)
